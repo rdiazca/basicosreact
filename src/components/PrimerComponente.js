@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class PrimerComponente extends Component{
-    render() { //El único método obligatorio de un class component en react es render()
-        return ( <h1>Hola Mundo</h1> );
-    }
-}
+
+const PrimerComponente = () =>  ( 
+     <h1>Hola Mundo</h1> 
+);
+
 
 export default PrimerComponente;
 
