@@ -1,10 +1,15 @@
-
-
+import React, { Fragment } from "react";
 function App() {
+  const empleado = {
+    nombre: "Raciel Noel",
+    trabajo: "Desarrollador web",
+  };
   return (
-    <div className="App">
-     <h1>Hola Mundo</h1>
-    </div>
+    <Fragment>
+      <h1>{empleado.nombre}</h1>
+      <p>{empleado.trabajo}</p>
+      { 2 + 2 }
+    </Fragment>
   );
 }
 
