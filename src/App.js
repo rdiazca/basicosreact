@@ -1,15 +1,16 @@
 import React, { Fragment } from "react";
+import PrimerComponente from "./components/PrimerComponente";
+
 function App() {
-  const empleado = {
-    nombre: "Raciel Noel",
-    trabajo: "Desarrollador web",
-  };
+  
   return (
     <Fragment>
-      <h1>{empleado.nombre}</h1>
-      <p>{empleado.trabajo}</p>
-      { 2 + 2 }
+    <PrimerComponente />
+    <PrimerComponente />
+    <PrimerComponente />
+    <PrimerComponente />
     </Fragment>
+  
   );
 }
 
