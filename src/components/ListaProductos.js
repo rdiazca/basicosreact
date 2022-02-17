@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
+import Producto from "./Producto";
 
-class Productos extends Component {
+class ListaProductos extends Component {
     state = {
         productos : [
             { id : 1, name : "Camisa ReactJS", precio: 30 },
@@ -12,11 +13,20 @@ class Productos extends Component {
     render() {
 
         const {productos} = this.state;
-        console.log(productos);
+        
         return ( 
+            <Fragment>
             <h1>Lista de Productos</h1>
+            {productos.map(producto => (
+                <Producto
+                    key={producto.id}
+                     producto = {producto}
+                
+                />
+            ))}
+            </Fragment>
         );
     }
 }
 
-export default Productos;
+export default ListaProductos;
